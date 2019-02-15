@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cac6b107-e75e-46f1-a3ac-531d9393c9a6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3976/svcOperadoraMx.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcOperadoraMx.disco" MetadataType="Disco" ID="199dbfc2-fc95-4ac5-85c2-d067bdee3fb9" SourceId="1" SourceUrl="http://localhost:3976/svcOperadoraMx.svc?disco" />
+    <MetadataFile FileName="svcOperadoraMx.xsd" MetadataType="Schema" ID="a9f88865-77df-4037-8552-69f36a22cf9a" SourceId="1" SourceUrl="http://localhost:3976/svcOperadoraMx.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcOperadoraMx1.xsd" MetadataType="Schema" ID="1269dee3-f14b-48eb-8f75-b77d99e136fb" SourceId="1" SourceUrl="http://localhost:3976/svcOperadoraMx.svc?xsd=xsd3" />
+    <MetadataFile FileName="svcOperadoraMx2.xsd" MetadataType="Schema" ID="0d9848ff-c0e6-4c86-973a-edf9df81d924" SourceId="1" SourceUrl="http://localhost:3976/svcOperadoraMx.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcOperadoraMx3.xsd" MetadataType="Schema" ID="2b639f19-2b23-4865-95cc-2e2f0db58d27" SourceId="1" SourceUrl="http://localhost:3976/svcOperadoraMx.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="a8b960c5-4fda-44d8-8a77-8fa7eb5c363a" SourceId="1" SourceUrl="http://localhost:3976/svcOperadoraMx.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

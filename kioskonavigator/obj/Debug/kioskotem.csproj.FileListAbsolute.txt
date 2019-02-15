@@ -1,0 +1,15 @@
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\bin\kioskotem.dll
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\bin\kioskotem.pdb
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\bin\Telerik.Web.UI.dll
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\bin\Telerik.Web.UI.xml
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\obj\Debug\kioskotem.dll
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\obj\Debug\kioskotem.pdb
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\bin\Ionic.Zip.dll
+C:\systemw\proyectos\kiosko operadoramx\kioskotem\obj\Debug\kioskotem.csprojResolveAssemblyReference.cache
+D:\kiosko operadoramx\kioskotem\bin\kioskotem.dll
+D:\kiosko operadoramx\kioskotem\bin\kioskotem.pdb
+D:\kiosko operadoramx\kioskotem\bin\Telerik.Web.UI.dll
+D:\kiosko operadoramx\kioskotem\bin\Telerik.Web.UI.xml
+D:\kiosko operadoramx\kioskotem\obj\Debug\kioskotem.csprojResolveAssemblyReference.cache
+D:\kiosko operadoramx\kioskotem\obj\Debug\kioskotem.dll
+D:\kiosko operadoramx\kioskotem\obj\Debug\kioskotem.pdb

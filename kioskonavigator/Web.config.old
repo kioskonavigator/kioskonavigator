@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<!--
+  Para obtener más información sobre cómo configurar la aplicación de ASP.NET, visite
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+	<configSections>
+	</configSections>
+	<system.web>
+    <sessionState timeout="15"/>
+    <httpRuntime maxRequestLength="4096" executionTimeout="65"/>
+		<compilation debug="true" targetFramework="4.0">
+			<assemblies>
+				<add assembly="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+				<add assembly="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+				<add assembly="System.Speech, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/></assemblies></compilation>
+	</system.web>
+	<system.serviceModel>
+		<bindings>
+   <basicHttpBinding>
+    <binding name="BasicHttpBinding_IsvcOperadoraMx" />
+   </basicHttpBinding>
+  </bindings>
+		<client>
+   <endpoint address="http://127.0.0.1/wcfoperadora/svcOperadoraMx.svc"
+    binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IsvcOperadoraMx"
+    contract="wcfoperadora.IsvcOperadoraMx" name="BasicHttpBinding_IsvcOperadoraMx" />
+  </client>
+	</system.serviceModel>
+</configuration>
