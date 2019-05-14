@@ -41,7 +41,7 @@ namespace kioskotem.nomina
                     
 
                     //DateTime fecha = DateTime.Parse(((Label)dtgnominas.Rows[id].FindControl("lblfecha")).Text);
-
+                    
 
                     //Session["ruta"] = "recibostOPERADORAMX/" + fecha.Month.ToString("00") + fecha.Year.ToString() + Session["idcodigo"].ToString() + "T.pdf";
 
@@ -213,10 +213,10 @@ namespace kioskotem.nomina
             DataSet dsEmpresas = new DataSet();
             dsEmpresas.Tables.Add("Tabla");
             dsEmpresas.Tables[0].Columns.Add("iIdPago");
-            dsEmpresas.Tables[0].Columns.Add("pagob");
+            //dsEmpresas.Tables[0].Columns.Add("pagob");
             dsEmpresas.Tables[0].Columns.Add("Fecha");
-            dsEmpresas.Tables[0].Columns.Add("importe");
-
+            dsEmpresas.Tables[0].Columns.Add("importesa");
+            dsEmpresas.Tables[0].Columns.Add("nombrenomina");
             //DateTime inicio = DateTime.Parse(dtpinicio.SelectedDate.ToString().Remove(18));
             //DateTime final = DateTime.Parse(dtpfinal.SelectedDate.ToString().Remove(18));
 
@@ -237,10 +237,10 @@ namespace kioskotem.nomina
                     for (int x = 0; x < dtEmpresas.Rows.Count; x++)
                     {
                         dsEmpresas.Tables[0].Rows.Add(dtEmpresas.Rows[x]["iIdPago"],
-                                                        dtEmpresas.Rows[x]["nombrenomina"],
-                                                         DateTime.Parse(dtEmpresas.Rows[x]["Fecha"].ToString()).ToShortDateString(),
+                                                        DateTime.Parse(dtEmpresas.Rows[x]["Fecha"].ToString()).ToShortDateString(),
                                                        // DateTime.Parse(dtEmpresas.Rows[x]["Fecha"].ToString().Remove(18)),
-                                                        dtEmpresas.Rows[x]["importesa"]);
+                                                        dtEmpresas.Rows[x]["importesa"],
+                                                         dtEmpresas.Rows[x]["nombrenomina"]);
 
 
 

@@ -49,11 +49,21 @@ namespace kioskotem.nomina
 
                     //DateTime fecha = DateTime.Parse(((Label)dtgnominas.Rows[id].FindControl("lblfecha")).Text);
                     string sa = ((Label)dtgnominas.Rows[id].FindControl("lbldpagosa")).Text;
+                      string carpetab = ((Label)dtgnominas.Rows[id].FindControl("lblb")).Text;
+                    String path;
 
-                    Session["ruta"] = "pagosnNAVIGATOR/" + sa + ".pdf";
-                    String path = Server.MapPath("../pagosnNAVIGATOR") + "\\" + sa + ".pdf";
-
-                    String path2 = "../pagosnNAVIGATOR/" + sa + ".pdf";
+                    if (carpetab != "")
+                    {
+                        Session["ruta"] = "pagosnNAVIGATOR/" + carpetab + "/" + sa + ".pdf";
+                        path = Server.MapPath("../pagosnNAVIGATOR/") + carpetab + "\\" + sa + ".pdf";
+                        String path2 = "../pagosnNAVIGATOR/" + carpetab + "/" + sa + ".pdf";
+                    }
+                    else
+                    {
+                        Session["ruta"] = "pagosnNAVIGATOR/" + sa + ".pdf";
+                        path = Server.MapPath("../pagosnNAVIGATOR") + "\\" + sa + ".pdf";
+                        String path2 = "../pagosnNAVIGATOR/" + sa + ".pdf";
+                    }
 
                     Session["archivo"] = sa + ".pdf";
                     System.IO.FileInfo toDownload = new System.IO.FileInfo(path);
@@ -77,10 +87,24 @@ namespace kioskotem.nomina
 
                     //DateTime fecha = DateTime.Parse(((Label)dtgnominas.Rows[id].FindControl("lblfecha")).Text);
                     string sindicato = ((Label)dtgnominas.Rows[id].FindControl("lbldpagosin")).Text;
+                    string carpetab = ((Label)dtgnominas.Rows[id].FindControl("lblb")).Text;
+                    String path;
 
-                    Session["ruta"] = "pagosnNAVIGATOR/" + sindicato + ".xml";
-                    String path = Server.MapPath("../pagosnNAVIGATOR") + "\\" + sindicato + ".xml";
-                    String path2 = "../pagosnNAVIGATOR/" + sindicato + ".xml";
+                    if (carpetab != "")
+                    {
+                        Session["ruta"] = "pagosnNAVIGATOR/" + carpetab + "/" + sindicato + ".xml";
+
+                        path = Server.MapPath("../pagosnNAVIGATOR/") + carpetab + "\\" + sindicato + ".xml";
+                        String path2 = "../pagosnNAVIGATOR/" + carpetab + "/" + sindicato + ".xml";
+                    }
+                    else
+                    {
+                        Session["ruta"] = "pagosnNAVIGATOR/" + sindicato + ".xml";
+
+                        path = Server.MapPath("../pagosnNAVIGATOR") + "\\" + sindicato + ".xml";
+                        String path2 = "../pagosnNAVIGATOR/" + sindicato + ".xml";
+                    }
+                   
 
                     Session["archivo"] = sindicato + ".xml";
 
@@ -134,6 +158,8 @@ namespace kioskotem.nomina
             dsEmpresas.Tables[0].Columns.Add("dpagosin");
             dsEmpresas.Tables[0].Columns.Add("Fecha");
             dsEmpresas.Tables[0].Columns.Add("importe");
+            dsEmpresas.Tables[0].Columns.Add("nombrenomina");
+
 
             DateTime inicio = DateTime.Parse(dtpinicio.SelectedDate.ToString());
             DateTime final = DateTime.Parse(dtpfinal.SelectedDate.ToString());
@@ -154,7 +180,8 @@ namespace kioskotem.nomina
                                                         dtEmpresas.Rows[x]["dasimiladopdf"],
                                                         dtEmpresas.Rows[x]["dasimiladoxml"],
                                                         DateTime.Parse(dtEmpresas.Rows[x]["Fecha"].ToString()).ToShortDateString(),
-                                                        dtEmpresas.Rows[x]["importeasi"]);
+                                                        dtEmpresas.Rows[x]["importeasi"],
+                                                        dtEmpresas.Rows[x]["nombrenomina"]);
 
 
 

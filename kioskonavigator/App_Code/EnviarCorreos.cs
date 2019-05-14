@@ -91,7 +91,7 @@ public class EnviarCorreos
                         "<br />" +
                         "Para continuar con el proceso de registro en <strong>" + NombreProducto + "</strong>, es necesario nos confirme haciendo click en el siguiente link " +
                         "<br />" +
-                        "<span style='text-align:center;'><a href='http://www.operadoramx.net/operadora/Verificar.aspx?ca=" + ClaveAcceso + "' target='_new'>http://www.operadoramx.net/operadora/Verificar.aspx</a></span>" +
+                        "<span style='text-align:center;'><a href='http://www.navigatorlamda.net/navigator/Verificar.aspx?ca=" + ClaveAcceso + "' target='_new'>http://www.navigatorlamda.net/navigator/Verificar.aspx</a></span>" +
                         "<br />" +
                         "o copie y pegue el contenido en la barra de navegaci&oacute;n de su explorador." +
                     "</p>" +
@@ -130,7 +130,7 @@ public class EnviarCorreos
                        "<br />" +
                        "Para continuar con el proceso de registro en <strong>Operadora Mx</strong>, es necesario nos confirme haciendo click en el siguiente link " +
                        "<br />" +
-                       "<span style='text-align:center;'><a href='http://localhost:26608/CambiarPassword.aspx?ca=" + ClaveAcceso + "' target='_new'>http://www.operadoramx.net/operadora/CambiarPassword.aspx</a></span>" +
+                       "<span style='text-align:center;'><a href='http://www.navigatorlamda.net/navigator/CambiarPassword.aspx?ca=" + ClaveAcceso + "' target='_new'>http://www.operadoramx.net/operadora/CambiarPassword.aspx</a></span>" +
                        "<br />" +
                        "o copie y pegue el contenido en la barra de navegaci&oacute;n de su explorador." +
                    "</p>" +

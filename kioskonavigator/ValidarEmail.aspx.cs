@@ -74,9 +74,9 @@ namespace kioskotem
 
         public void enviarCorreo(String clavedeacceso, String CorreoContacto, String nombreContacto)
         {
-            string paginaConfirmacion = EnviarCorreos.paginaConfirmar(nombreContacto,  "OperadoraMX ", clavedeacceso);
+            string paginaConfirmacion = EnviarCorreos.paginaConfirmar(nombreContacto,  "Navigator ", clavedeacceso);
 
-            string asuntoConfirmar = "Bienvenido a " + "Operadora Mx" + "!";
+            string asuntoConfirmar = "Bienvenido a " + "Navigator" + "!";
 
             if (EnviarCorreos.enviarCorreo(CorreoContacto, paginaConfirmacion, asuntoConfirmar) == false)
             {

@@ -3,6 +3,5 @@ D:\Original\kiosko navigator\kioskonavigator\bin\kioskotem.pdb
 D:\Original\kiosko navigator\kioskonavigator\bin\Ionic.Zip.dll
 D:\Original\kiosko navigator\kioskonavigator\bin\Telerik.Web.UI.dll
 D:\Original\kiosko navigator\kioskonavigator\bin\Telerik.Web.UI.xml
-D:\Original\kiosko navigator\kioskonavigator\obj\Debug\kioskotemNavigator.csprojResolveAssemblyReference.cache
 D:\Original\kiosko navigator\kioskonavigator\obj\Debug\kioskotem.dll
 D:\Original\kiosko navigator\kioskonavigator\obj\Debug\kioskotem.pdb
